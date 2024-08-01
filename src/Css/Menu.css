@@ -1,0 +1,30 @@
+.menu-wrapper {
+    min-width: 99vw;
+    height: 10vh;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btns {
+    display: flex;
+    margin-right: 100px;
+    width: 30vw;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.menu-btn {
+    cursor: pointer;
+
+}
+
+.menu-btn:hover {
+    font-weight: bold;
+}
+
+.menu-logo {
+    margin-left: 50px;
+    font-size: 30px;
+}
