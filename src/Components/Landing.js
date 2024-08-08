@@ -11,7 +11,7 @@ function Landing() {
   const images = [Landing_1, Landing_2, Landing_3];
 
   const ChangeImg = () => {
-    if (ImageIdx >= images.length - 1) {
+    if (ImageIdx === images.length - 1) {
       SetImageIdx(0);
     } else {
       SetImageIdx(ImageIdx + 1);
@@ -21,7 +21,7 @@ function Landing() {
   useEffect(() => {
     const intervalId = setInterval(ChangeImg, 5000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [ImageIdx]);
 
   return (
     <div className="landing-wrapper">
