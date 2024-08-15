@@ -1,5 +1,6 @@
 import "../Css/Menu.css";
 import { MENU_BTNS } from "./Content";
+import { NavLink } from "react-router-dom";
 
 function Menu() {
   return (
@@ -8,9 +9,11 @@ function Menu() {
       <div className="menu-btns">
         {MENU_BTNS.map((texto, idx) => {
           return (
-            <div className="menu-btn" key={idx}>
-              {texto}
-            </div>
+            <NavLink exact to={"/" + texto.toLowerCase()}>
+              <div className="menu-btn" key={idx}>
+                {texto}
+              </div>
+            </NavLink>
           );
         })}
       </div>

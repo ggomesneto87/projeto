@@ -1,13 +1,13 @@
 import "./App.css";
 import Menu from "./Components/Menu";
-import Landing from "./Components/Landing";
+import Routes from "./Components/Routes";
 
 function App() {
   return (
     <div className="App">
       <div className="App-centered">
         <Menu />
-        <Landing />
+        <Routes />
       </div>
     </div>
   );
